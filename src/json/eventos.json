@@ -1,0 +1,286 @@
+[
+    {
+        "id": 1,
+        "nomeEvento": "Nu Metal Rising",
+        "imagemPromo": "",
+        "atracoes": ["System of a Down", "Papa Roach"],
+        "descricao": "Um encontro explosivo de ícones do nu metal para levantar a plateia.",
+        "data": "15/01/2025",
+        "horario": "20:30",
+        "local": "Allianz Parque - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Pista Premium",
+                "preco": 750.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Estacionamento VIP", "preco": 100.00 },
+                    { "id": 2, "nome": "Open Bar", "preco": 200.00 },
+                    { "id": 3, "nome": "Camiseta Oficial", "preco": 80.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Pista Comum",
+                "preco": 400.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Estacionamento Comum", "preco": 50.00 },
+                    { "id": 5, "nome": "Foto Oficial", "preco": 60.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Cadeira Inferior",
+                "preco": 500.00,
+                "servicosAdicionais": [
+                    { "id": 6, "nome": "Open Bar", "preco": 150.00 },
+                    { "id": 7, "nome": "Camiseta Oficial", "preco": 80.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "Cadeira Superior",
+                "preco": 300.00,
+                "servicosAdicionais": [
+                    { "id": 8, "nome": "Estacionamento Comum", "preco": 50.00 },
+                    { "id": 9, "nome": "Programa do Evento", "preco": 30.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nomeEvento": "Prog Darkness Fest",
+        "imagemPromo": "",
+        "atracoes": ["Tool", "A Perfect Circle", "Soen"],
+        "descricao": "Festival introspectivo com progressivo, alternativo e muito peso.",
+        "data": "10/02/2025",
+        "horario": "21:00",
+        "local": "Madison Square Garden - Nova York, EUA",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Floor",
+                "preco": 950.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Camiseta Oficial", "preco": 90.00 },
+                    { "id": 2, "nome": "Open Bar Premium", "preco": 250.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Lower Bowl",
+                "preco": 700.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Estacionamento VIP", "preco": 120.00 },
+                    { "id": 4, "nome": "Foto Oficial", "preco": 70.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Upper Bowl",
+                "preco": 400.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Programa do Evento", "preco": 40.00 },
+                    { "id": 6, "nome": "Camiseta Oficial", "preco": 90.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "VIP Lounge",
+                "preco": 1500.00,
+                "servicosAdicionais": [
+                    { "id": 7, "nome": "Open Bar Premium", "preco": 300.00 },
+                    { "id": 8, "nome": "Lounge Privativo", "preco": 400.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nomeEvento": "Noite Gótica",
+        "imagemPromo": "",
+        "atracoes": ["The Cure", "Type O Negative", "Lacuna Coil"],
+        "descricao": "Uma noite sombria e melancólica para quem ama o lado obscuro da música.",
+        "data": "22/03/2025",
+        "horario": "19:30",
+        "local": "Royal Albert Hall - Londres, Reino Unido",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Arena",
+                "preco": 600.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Open Bar", "preco": 150.00 },
+                    { "id": 2, "nome": "Foto Oficial", "preco": 60.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Stalls",
+                "preco": 450.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Camiseta Oficial", "preco": 70.00 },
+                    { "id": 4, "nome": "Programa do Evento", "preco": 40.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Circle",
+                "preco": 350.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Open Bar", "preco": 120.00 },
+                    { "id": 6, "nome": "Estacionamento Comum", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "Gallery",
+                "preco": 250.00,
+                "servicosAdicionais": [
+                    { "id": 7, "nome": "Programa do Evento", "preco": 30.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nomeEvento": "Extreme Metal Assault",
+        "imagemPromo": "",
+        "atracoes": ["Gojira", "Slipknot", "Lamb of God"],
+        "descricao": "Metal brutal e visceral para moshpit até não aguentar mais.",
+        "data": "18/04/2025",
+        "horario": "22:15",
+        "local": "Accor Arena - Paris, França",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Pista",
+                "preco": 500.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Open Bar", "preco": 150.00 },
+                    { "id": 2, "nome": "Foto Oficial", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Arquibancada Inferior",
+                "preco": 350.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Programa do Evento", "preco": 30.00 },
+                    { "id": 4, "nome": "Camiseta Oficial", "preco": 70.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Arquibancada Superior",
+                "preco": 250.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Estacionamento Comum", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "Camarote VIP",
+                "preco": 1200.00,
+                "servicosAdicionais": [
+                    { "id": 6, "nome": "Open Bar Premium", "preco": 250.00 },
+                    { "id": 7, "nome": "Lounge Privativo", "preco": 400.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nomeEvento": "Indie Dark Vibes",
+        "imagemPromo": "",
+        "atracoes": ["Chelsea Wolfe", "Crystal Castles", "Poppy"],
+        "descricao": "Indie, eletrônico experimental e dark pop para expandir a mente.",
+        "data": "09/05/2025",
+        "horario": "20:00",
+        "local": "Teatro Colón - Buenos Aires, Argentina",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Plateia Baixa",
+                "preco": 420.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Camiseta Oficial", "preco": 80.00 },
+                    { "id": 2, "nome": "Foto Oficial", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Plateia Alta",
+                "preco": 280.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Programa do Evento", "preco": 30.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Frisas",
+                "preco": 350.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Open Bar", "preco": 120.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "Camarotes",
+                "preco": 600.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Open Bar Premium", "preco": 200.00 },
+                    { "id": 6, "nome": "Lounge Privativo", "preco": 350.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nomeEvento": "Legends of Darkness",
+        "imagemPromo": "",
+        "atracoes": ["Black Sabbath", "Nine Inch Nails", "Marilyn Manson"],
+        "descricao": "Um tributo às bandas que moldaram o som sombrio e pesado que amamos.",
+        "data": "27/06/2025",
+        "horario": "23:45",
+        "local": "Tokyo Dome - Tóquio, Japão",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "Arena",
+                "preco": 800.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Open Bar", "preco": 200.00 },
+                    { "id": 2, "nome": "Foto Oficial", "preco": 60.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "1º Anel",
+                "preco": 600.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Programa do Evento", "preco": 50.00 },
+                    { "id": 4, "nome": "Camiseta Oficial", "preco": 90.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "2º Anel",
+                "preco": 400.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Estacionamento Comum", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "VIP Box",
+                "preco": 1800.00,
+                "servicosAdicionais": [
+                    { "id": 6, "nome": "Open Bar Premium", "preco": 300.00 },
+                    { "id": 7, "nome": "Lounge Privativo", "preco": 500.00 }
+                ]
+            }
+        ]
+    }
+]
