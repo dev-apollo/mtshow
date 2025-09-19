@@ -3,11 +3,12 @@ const searchParams = new URLSearchParams(window.location.search);
 
 function confirmarServicos(infosEvento, infosSetor){
     const servicos = document.querySelectorAll("input[type='checkbox']")
-    const idServicos = servicos.forEach(checkbox => {
+    const idServicos = [] 
+    servicos.forEach(checkbox => {
         if(checkbox.checked) idServicos.push(checkbox.value)
     })
-    console.log(idServicos)
-    window.location = `pagamento.html?idEvento=${infosEvento.id}&idSetor=${infosSetor}`;
+    const idServicosStr = idServicos.join(",")
+    window.location = `pagamento.html?idEvento=${infosEvento.id}&idSetor=${infosSetor.id}&idServicos=${idServicosStr}`;
 }
 
 function criarServicoAdicional(infosServicos){
@@ -43,7 +44,8 @@ function montarServicosAdicionais(infosSetor, infosEvento){
 
     let buttonConfirmarServicos = document.createElement("button");
     buttonConfirmarServicos.textContent = "Confirmar serviços";
-    buttonConfirmarServicos.addEventListener("click", () => {
+    buttonConfirmarServicos.addEventListener("click", (e) => {
+        e.preventDefault()
         confirmarServicos(infosEvento, infosSetor)
     })
 
