@@ -1,0 +1,219 @@
+[
+    {
+        "id": 1,
+        "nomeEvento": "Bad Omens - The Death of Peace of Mind Tour",
+        "imagemPromo": "src/imgs/badomens.jpg",
+        "descricao": "Banda americana de metalcore originária de Richmond, Virgínia, conhecida por seu som atmosférico e melódico. O Bad Omens mistura o peso do metal com elementos eletrônicos e industriais, liderados pelos vocais versáteis de Noah Sebastian, criando uma sonoridade única e moderna.",
+        "data": "12/10/2025",
+        "horario": "21:00",
+        "local": "Espaço Unimed - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 700.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Acesso Antecipado", "preco": 150.00 },
+                    { "id": 2, "nome": "Camiseta Exclusiva", "preco": 120.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 400.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Pôster Oficial", "preco": 50.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 200.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Pôster Oficial", "preco": 50.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nomeEvento": "My Chemical Romance - The Foundations of Decay",
+        "imagemPromo": "src/imgs/mcrposter.jpg",
+        "descricao": "Ícone do rock alternativo e da cena emo dos anos 2000, My Chemical Romance é uma banda aclamada por sua teatralidade e álbuns conceituais. Suas músicas misturam a energia do punk com melodias de rock e pop, criando hinos que marcaram uma geração.",
+        "data": "25/11/2025",
+        "horario": "20:00",
+        "local": "Estádio do Morumbi - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 900.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Estacionamento VIP", "preco": 120.00 },
+                    { "id": 2, "nome": "Kit Oficial (Camiseta + Pôster)", "preco": 200.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 500.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Pôster Oficial da Tour", "preco": 80.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 250.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Pôster Oficial da Tour", "preco": 80.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nomeEvento": "Bring Me The Horizon - Survivel Horror European Tour",
+        "imagemPromo": "src/imgs/bmth.jpg",
+        "descricao": "Originária da Inglaterra, Bring Me The Horizon é uma das bandas mais inovadoras do rock moderno. Começando no metalcore, o grupo evoluiu constantemente, explorando e fundindo gêneros que vão do rock alternativo à música eletrônica e pop, sempre surpreendendo a cada lançamento.",
+        "data": "05/12/2025",
+        "horario": "21:30",
+        "local": "The O2 Arena - Londres, Reino Unido",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 850.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Open Bar Premium", "preco": 250.00 },
+                    { "id": 2, "nome": "Acesso ao Lounge", "preco": 100.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 450.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Copo Oficial do Show", "preco": 40.00 },
+                    { "id": 4, "nome": "Estacionamento", "preco": 60.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 225.00,
+                "servicosAdicionais": [
+                    { "id": 5, "nome": "Copo Oficial do Show", "preco": 40.00 },
+                    { "id": 6, "nome": "Estacionamento", "preco": 60.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nomeEvento": "System of a Down - Única Apresentação",
+        "imagemPromo": "src/imgs/soad.webp",
+        "descricao": "Com uma sonoridade única e inconfundível, System of a Down desafia classificações. Misturando heavy metal com influências de música folclórica, ritmos frenéticos e letras com forte crítica social e política, o grupo se estabeleceu como uma das vozes mais originais do rock.",
+        "data": "08/02/2026",
+        "horario": "22:00",
+        "local": "Allianz Parque - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 1000.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Pôster Oficial Autografado", "preco": 300.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 550.00,
+                "servicosAdicionais": [
+                    { "id": 2, "nome": "Camiseta do Show", "preco": 110.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 275.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Camiseta do Show", "preco": 110.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nomeEvento": "Avenged Sevenfold - Life Is But A Dream... Tour",
+        "imagemPromo": "src/imgs/avanged.jpeg",
+        "descricao": "Formada na Califórnia, Avenged Sevenfold é uma potência do heavy metal moderno. A banda é conhecida por suas harmonias de guitarra, composições épicas e a voz marcante de M. Shadows, transitando com maestria entre o metalcore, hard rock e o metal progressivo.",
+        "data": "15/03/2026",
+        "horario": "20:00",
+        "local": "Pedreira Paulo Leminski - Curitiba, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 1200.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Open Bar", "preco": 250.00 },
+                    { "id": 2, "nome": "Camiseta Oficial", "preco": 100.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 600.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Estacionamento", "preco": 70.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 300.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Estacionamento", "preco": 70.00 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nomeEvento": "Babymetal - The One World Tour",
+        "imagemPromo": "src/imgs/babymetal.png",
+        "descricao": "Um fenômeno global do Japão, Babymetal criou um gênero próprio ao fundir a fofura do J-pop com a intensidade do heavy metal. O grupo é famoso por suas coreografias elaboradas, performances energéticas e um som que contrasta vocais doces com guitarras pesadas.",
+        "data": "28/04/2026",
+        "horario": "19:00",
+        "local": "Vibra São Paulo - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "VIP",
+                "preco": 800.00,
+                "servicosAdicionais": [
+                    { "id": 1, "nome": "Foto com a banda (simulada)", "preco": 150.00 },
+                    { "id": 2, "nome": "Kit Exclusivo", "preco": 200.00 }
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Inteira",
+                "preco": 450.00,
+                "servicosAdicionais": [
+                    { "id": 3, "nome": "Pôster Exclusivo", "preco": 75.00 }
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Meia",
+                "preco": 225.00,
+                "servicosAdicionais": [
+                    { "id": 4, "nome": "Pôster Exclusivo", "preco": 75.00 }
+                ]
+            }
+        ]
+    }
+]

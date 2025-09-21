@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pagamento.css">
+    <link rel="stylesheet" href="./header_footer.css">
     <title>MTShow - Pagamento</title>
 </head>
 <body>
     <main>
-        <h1>MTShow - Pagamento</h1>
+        <header>
+            <h1>MTShow - Pagamento</h1>
+        </header>
+        <div id="evento">
+            <div id="infosEvento">
+                <h2 id="nomeEvento"></h2>
+                <p id="data-horario"></p>
+                <p id="local"></p>
+            </div>
+            <div>
+                <img src="" id="imagemPromo">
+            </div>
+        </div>
         <div id="pagamento">
             <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://pbs.twimg.com/media/Fx8kzV3agAAvyXm.png">
             <p id="valor"></p>

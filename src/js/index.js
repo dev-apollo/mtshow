@@ -1,52 +1,51 @@
-import eventos from "../json/eventos.json" with { type: "json" };
+import festivais from "../json/festivais.json" with { type: "json" };
+import solos from "../json/solos.json" with { type: "json" };
 
-function verDetalhes(infosEvento){
-    window.location =`evento.html?id=${infosEvento.id}`;
+function verDetalhes(infosEvento, tipo){
+    window.location =`evento.html?tipo=${tipo}&id=${infosEvento.id}`;
 }
 
-function criarEvento(infosEvento){
+function criarEvento(infosEvento, tipo){
     let evento = document.createElement("div");
+    evento.classList.add("card")
 
     let imagemPromo = document.createElement("img");
     imagemPromo.src = infosEvento.imagemPromo;
+    
+    let local = document.createElement("p");
+   
+    local.innerHTML = `${infosEvento.local}`;
 
     let nomeEvento = document.createElement("p");
     nomeEvento.innerHTML = `${infosEvento.nomeEvento}`;
-    
-    let dataHorario = document.createElement("p");
-    dataHorario.innerHTML = `${infosEvento.data} - ${infosEvento.horario}`;
-
-    let atracoes = document.createElement("p");
-    infosEvento.atracoes.map((infosAtracoes, index) => {
-        atracoes.innerHTML = `${atracoes.innerHTML}`+`${infosAtracoes}`
-        if(index != infosEvento.atracoes.length-1){
-            atracoes.innerHTML = `${atracoes.innerHTML}`+`, `
-        }
-    })
-
-    let local = document.createElement("p");
-    local.innerHTML = `${infosEvento.local}`;
+    nomeEvento.classList.add("card-descricao")
     
     let botaoDetalhes = document.createElement("button");
     botaoDetalhes.textContent = "Ver detalhes";
     botaoDetalhes.addEventListener("click", () => {
-        verDetalhes(infosEvento)
+        verDetalhes(infosEvento,tipo)
     })
+    
 
-    evento.appendChild(imagemPromo);
-    evento.appendChild(nomeEvento);
-    evento.appendChild(dataHorario);
-    evento.appendChild(atracoes)
-    evento.appendChild(local);
+    evento.appendChild(imagemPromo)
+    evento.appendChild(nomeEvento)
     evento.appendChild(botaoDetalhes);
+    
     
     return evento;
 }
 
 (() => {
-    let divEventos = document.getElementById("eventos");
-    eventos.map((infosEvento) => {
-        let evento = criarEvento(infosEvento);
-        divEventos.appendChild(evento);
+    let divFestivais = document.getElementById("festivais");
+    festivais.map((infosEvento) => {
+        let evento = criarEvento(infosEvento, "festival");
+        divFestivais.appendChild(evento);
     });
+
+    let divSolos = document.getElementById("solos");
+    solos.map((infosEvento) => {
+        let evento = criarEvento(infosEvento, "solo");
+        divSolos.appendChild(evento);
+    });
+
 })();

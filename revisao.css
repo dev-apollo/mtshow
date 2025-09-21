@@ -1,0 +1,51 @@
+body {
+  flex-direction: column;
+  margin: 0;
+}
+header, footer {
+    text-align: center;
+    background-color: #1a1d5e;
+    color: white;
+    padding: 10px;
+}
+
+header, main, footer {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.revisao-ctn {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto; 
+    gap: 40px; 
+    align-items: flex-start; 
+}
+
+.detalhes-pedido {
+    flex: 1; 
+    text-align: right;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+.imagem-evento img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.valorTotal {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#retornar {
+  margin-top: 20px;
+}

@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTShow - Serviços adicionais</title>
+    <link rel="stylesheet" href="./servicosAdicionais.css">
+    <link rel="stylesheet" href="./header_footer.css">
 </head>
 <body>
     <main>
-        <h1>MTShow - Serviços adicionais</h1>
+        <header>
+            <h1>MTShow - Serviços adicionais</h1>
+        </header>
+        <div id="evento">
+            <div id="infosEvento">
+                <h2 id="nomeEvento"></h2>
+                <p id="data-horario"></p>
+                <p id="local"></p>
+            </div>
+            <div>
+                <img src="" id="imagemPromo">
+            </div>
+        </div>
         <div id="infosSetor">
             <h3>Você selecionou o seguinte setor:</h3>
             <p id="setor"></p>
             <p id="preco"></p>
         </div>
-        <div>
+        <div id="servicosAdicionais">
             <h3>Deseja algum serviço adicional?</h3>
             <p><small>Não é obrigatório selecionar um serviço</small></p>
             <form id="servicos">

@@ -1,64 +1,51 @@
-import eventos from "../json/eventos.json" with { type: "json" };
+import festivais from "../json/festivais.json" with { type: "json" };
+import solos from "../json/solos.json" with { type: "json" };
+import { montarEvento } from "./utils.js";
 const searchParams = new URLSearchParams(window.location.search);
 
-function escolherSetor(idEvento, infosSetor){
-    window.location = `servicosAdicionais.html?idEvento=${idEvento}&idSetor=${infosSetor.id}`;
+function escolherSetor(idEvento, infosSetor, eventoTipo){
+    window.location = `servicosAdicionais.html?idEvento=${idEvento}&idSetor=${infosSetor.id}&tipo=${eventoTipo}`;
 }
 
-function criarArtista(infosArtista){
-    let artista = document.createElement("div");
+function criarSetor(idEvento, infosSetor, eventoTipo){
+    let setorLinha = document.createElement("tr");
+    setorLinha.classList.add("linha-setor"); 
 
-    let nomeArtista = document.createElement("p");
-    nomeArtista.innerHTML = `- ${infosArtista}`;
+    let nomeTd = document.createElement("td");
+    nomeTd.textContent = infosSetor.nome;
+
+    let precoTd = document.createElement("td");
+    precoTd.textContent = infosSetor.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    setorLinha.addEventListener("click", () => {
+        escolherSetor(idEvento, infosSetor, eventoTipo);
+    })
+
+    setorLinha.appendChild(nomeTd);
+    setorLinha.appendChild(precoTd);
     
-    artista.appendChild(nomeArtista);
-
-    return artista;
+    return setorLinha;
 }
 
-function criarSetor(idEvento, infosSetor){
-    let setor = document.createElement("button");
-    setor.textContent = `${infosSetor.nome}`;
-    setor.addEventListener("click", () => {
-        escolherSetor(idEvento, infosSetor);
-    })
-
-
-    return setor;
-}
-
-function montarEvento(infosEvento){
-    document.title = `MTShow - ${infosEvento.nomeEvento}`;
-
-    let imagemPromo = document.getElementById("imagemPromo");
-    imagemPromo.src = infosEvento.imagemPromo;
-
-    let nomeEvento = document.getElementById("nomeEvento");
-    nomeEvento.innerHTML = `${infosEvento.nomeEvento}`;
-
-    let dataHora = document.getElementById("data-horario");
-    dataHora.innerHTML = `${infosEvento.data} - ${infosEvento.horario}`;
-
-    let local = document.getElementById("local");
-    local.innerHTML = `${infosEvento.local}`;
-
+function montarTabelaSetores(infosEvento, eventoTipo) {
     let descricao = document.getElementById("descricao");
-    descricao.innerHTML = `${infosEvento.descricao}`;    
-
-    let divArtistas = document.getElementById("artistas");
-    infosEvento.atracoes.map((infosArtista) => {
-        let artista = criarArtista(infosArtista);
-        divArtistas.appendChild(artista);
-    })
-
-    let divSetores = document.getElementById("setores");
-    infosEvento.setores.map((infosSetor) => {
-        let setor = criarSetor(infosEvento.id, infosSetor);
-        divSetores.appendChild(setor);
-    })
+    descricao.innerHTML = `${infosEvento.descricao}`; 
+    
+    const corpoTabela = document.getElementById("corpo-tabela");
+    corpoTabela.innerHTML = "";
+    infosEvento.setores.forEach((infosSetor) => {
+        const setorLinha = criarSetor(infosEvento.id, infosSetor, eventoTipo);
+        corpoTabela.appendChild(setorLinha);
+    });
 }
-
 (() => {
-    const infosEvento = eventos[searchParams.get("id")-1];
-    montarEvento(infosEvento);
+    const searchParams = new URLSearchParams(window.location.search);
+    const eventoTipo = searchParams.get("tipo");
+    let infoEvento;
+    if(eventoTipo === 'festival'){
+        infoEvento = festivais[searchParams.get("id")-1];
+    }else{
+        infoEvento = solos[searchParams.get("id")-1]
+    }
+    montarEvento(infoEvento);
+    montarTabelaSetores(infoEvento,eventoTipo)
 })();
