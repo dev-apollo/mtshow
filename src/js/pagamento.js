@@ -6,7 +6,8 @@ const searchParams = new URLSearchParams(window.location.search);
 
 function confirmarPagamento(infosEvento, infosSetor, idServicos, tipoEvento){
     const idServicosStr = idServicos.join(",")
-    window.location = `revisao.html?idEvento=${infosEvento.id}&idSetor=${infosSetor.id}&idServicos=${idServicosStr}&tipo=${tipoEvento}`;
+    //Para passar o valor correto do ingresso pra prox pag tem que colocar no url o tipo de ingresso escolhido
+    window.location = `revisao.html?idEvento=${infosEvento.id}&idSetor=${infosSetor.id}&idServicos=${idServicosStr}&tipo=${tipoEvento}&tipoIngresso${}`;
 }
 
 function definirValor(infosSetor, idServicos){
@@ -17,12 +18,14 @@ function definirValor(infosSetor, idServicos){
     })
 
     let pValor = document.getElementById("valor")
-    pValor.innerHTML = `Valor final: R$ ${valorFinal.toFixed(2)}`
+    pValor.innerHTML = `R$ ${valorFinal.toFixed(2)}`
 }
 
 (() => {
     const searchParams = new URLSearchParams(window.location.search);
     const eventoTipo = searchParams.get("tipo");
+    //Pra ler o tipo do ingresso
+    //const tipoIngresso = searchParams("tipoIngresso")
     let idServicos = (searchParams.get("idServicos") || "").split(",");
     let infosEvento;
     
@@ -35,7 +38,7 @@ function definirValor(infosSetor, idServicos){
     montarEvento(infosEvento)
     definirValor(infosSetor, idServicos);
     const buttonConfirmarPagamento = document.getElementById("confirmarPagamento");
-    buttonConfirmarPagamento.addEventListener("click", () => {
+    buttonConfirmarPagamento.addEventListener("submit", () => {
         confirmarPagamento(infosEvento, infosSetor, idServicos, eventoTipo);
     })
 })()

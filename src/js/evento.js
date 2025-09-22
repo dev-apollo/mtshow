@@ -4,37 +4,41 @@ import { montarEvento } from "./utils.js";
 const searchParams = new URLSearchParams(window.location.search);
 
 function escolherSetor(idEvento, infosSetor, eventoTipo){
-    window.location = `servicosAdicionais.html?idEvento=${idEvento}&idSetor=${infosSetor.id}&tipo=${eventoTipo}`;
+    //Para passar o valor correto do ingresso pra prox pag tem que colocar no url o tipo de ingresso escolhido
+    window.location = `servicosAdicionais.html?idEvento=${idEvento}&idSetor=${infosSetor.id}&tipo=${eventoTipo}&tipoIngresso${}`;
 }
 
-function criarSetor(idEvento, infosSetor, eventoTipo){
-    let setorLinha = document.createElement("tr");
-    setorLinha.classList.add("linha-setor"); 
-
-    let nomeTd = document.createElement("td");
-    nomeTd.textContent = infosSetor.nome;
-
-    let precoTd = document.createElement("td");
-    precoTd.textContent = infosSetor.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    setorLinha.addEventListener("click", () => {
-        escolherSetor(idEvento, infosSetor, eventoTipo);
-    })
-
-    setorLinha.appendChild(nomeTd);
-    setorLinha.appendChild(precoTd);
-    
-    return setorLinha;
+function formatarPreco(preco) {
+    return preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
-function montarTabelaSetores(infosEvento, eventoTipo) {
-    let descricao = document.getElementById("descricao");
-    descricao.innerHTML = `${infosEvento.descricao}`; 
-    
+function montarTabelaPrecos(infosEvento, eventoTipo) {
     const corpoTabela = document.getElementById("corpo-tabela");
+
     corpoTabela.innerHTML = "";
-    infosEvento.setores.forEach((infosSetor) => {
-        const setorLinha = criarSetor(infosEvento.id, infosSetor, eventoTipo);
-        corpoTabela.appendChild(setorLinha);
+
+    infosEvento.setores.forEach((setor) => {
+        const linha = document.createElement('tr');
+        linha.classList.add('linha-setor'); 
+
+        const setorTd = document.createElement('td');
+        setorTd.textContent = setor.nome;
+
+        const inteiraTd = document.createElement('td');
+        inteiraTd.textContent = formatarPreco(setor.inteira);
+
+        const meiaTd = document.createElement('td');
+        meiaTd.textContent = formatarPreco(setor.meia);
+
+        linha.addEventListener('click', () => {
+            escolherSetor(infosEvento.id, setor, eventoTipo);
+        });
+        
+        linha.appendChild(setorTd);
+        linha.appendChild(inteiraTd);
+        linha.appendChild(meiaTd);
+
+        corpoTabela.appendChild(linha);
     });
 }
 (() => {
@@ -46,6 +50,10 @@ function montarTabelaSetores(infosEvento, eventoTipo) {
     }else{
         infoEvento = solos[searchParams.get("id")-1]
     }
+
+    let descricao = document.getElementById("descricao");
+    descricao.innerHTML = `${infoEvento.descricao}`; 
+
     montarEvento(infoEvento);
-    montarTabelaSetores(infoEvento,eventoTipo)
+    montarTabelaPrecos(infoEvento,eventoTipo)
 })();

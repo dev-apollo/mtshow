@@ -23,9 +23,33 @@
             </div>
         </div>
         <div id="pagamento">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://pbs.twimg.com/media/Fx8kzV3agAAvyXm.png">
-            <p id="valor"></p>
-            <button id="confirmarPagamento">Confirmar pagamento</button>
+            <div id="titulo">
+                <h3>Adicione um cartão de crédito</h3>
+                <hr>
+            </div>
+            <form >
+                <label for="numCartao">Número do cartão:</label>
+                <input type="text" id="numCartao" required>
+                <label for="nomeCartao">Nome no cartão:</label>
+                <input type="text" id="nomeCartao" required>
+                <label for="dataExp">Data de expiração:</label>
+                <input type="month" id="dataExp" required>
+                <label for="cvv">Código de segurança (CVV)</label>
+                <input type="text" required>
+                <label for="parcelas">Parcelas:</label>
+                <select id="parcelas" required> 
+                    <option>1x</option>
+                    <option>2x</option>
+                    <option>3x</option>
+                    <option>4x</option>
+                </select>
+            </form>
+            <hr>
+            <div class="valorTotal">
+                <span class="valorLabel">Valor total:</span>
+                <span id="valor"></span>
+            </div>
+            <button type ="submit" id="confirmarPagamento">Confirmar pagamento</button>
         </div>
     </main>
     <footer>

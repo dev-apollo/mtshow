@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nomeEvento": "Bad Omens - The Death of Peace of Mind Tour",
+        "nomeEvento": "Bad Omens - Fade into the grey ",
         "imagemPromo": "src/imgs/badomens.jpg",
         "descricao": "Banda americana de metalcore originária de Richmond, Virgínia, conhecida por seu som atmosférico e melódico. O Bad Omens mistura o peso do metal com elementos eletrônicos e industriais, liderados pelos vocais versáteis de Noah Sebastian, criando uma sonoridade única e moderna.",
         "data": "12/10/2025",
@@ -10,28 +10,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 700.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Acesso Antecipado", "preco": 150.00 },
-                    { "id": 2, "nome": "Camiseta Exclusiva", "preco": 120.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Acesso Antecipado", "preco": 150.00 }, { "id": 2, "nome": "Camiseta Exclusiva", "preco": 120.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 400.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Pôster Oficial", "preco": 50.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 700.00,
+                "meia": 350.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Acesso Antecipado", "preco": 150.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 200.00,
-                "servicosAdicionais": [
-                    { "id": 4, "nome": "Pôster Oficial", "preco": 50.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 550.00,
+                "meia": 275.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Pôster Oficial", "preco": 50.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 380.00,
+                "meia": 190.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Copo do Show", "preco": 35.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 420.00,
+                "meia": 210.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 50.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 300.00,
+                "meia": 150.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Guarda-Volumes", "preco": 30.00 } ]
             }
         ]
     },
@@ -46,28 +63,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 900.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Estacionamento VIP", "preco": 120.00 },
-                    { "id": 2, "nome": "Kit Oficial (Camiseta + Pôster)", "preco": 200.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 1100.00,
+                "meia": 550.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Estacionamento VIP", "preco": 120.00 }, { "id": 2, "nome": "Kit Oficial (Camiseta + Pôster)", "preco": 200.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 500.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Pôster Oficial da Tour", "preco": 80.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 1000.00,
+                "meia": 500.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Estacionamento VIP", "preco": 120.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 250.00,
-                "servicosAdicionais": [
-                    { "id": 4, "nome": "Pôster Oficial da Tour", "preco": 80.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 800.00,
+                "meia": 400.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Pôster Oficial da Tour", "preco": 80.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 500.00,
+                "meia": 250.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Copo do Show", "preco": 40.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 650.00,
+                "meia": 325.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 50.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 450.00,
+                "meia": 225.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Programa do Evento", "preco": 30.00 } ]
             }
         ]
     },
@@ -82,30 +116,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 850.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Open Bar Premium", "preco": 250.00 },
-                    { "id": 2, "nome": "Acesso ao Lounge", "preco": 100.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 850.00,
+                "meia": 425.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Open Bar Premium", "preco": 250.00 }, { "id": 2, "nome": "Acesso ao Lounge", "preco": 100.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 450.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Copo Oficial do Show", "preco": 40.00 },
-                    { "id": 4, "nome": "Estacionamento", "preco": 60.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 800.00,
+                "meia": 400.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Open Bar Premium", "preco": 250.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 225.00,
-                "servicosAdicionais": [
-                    { "id": 5, "nome": "Copo Oficial do Show", "preco": 40.00 },
-                    { "id": 6, "nome": "Estacionamento", "preco": 60.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 650.00,
+                "meia": 325.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Copo Oficial do Show", "preco": 40.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 450.00,
+                "meia": 225.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Pôster Oficial", "preco": 60.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 500.00,
+                "meia": 250.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 60.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 380.00,
+                "meia": 190.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Guarda-Volumes", "preco": 35.00 } ]
             }
         ]
     },
@@ -120,27 +169,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 1000.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Pôster Oficial Autografado", "preco": 300.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 1300.00,
+                "meia": 650.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Pôster Oficial Autografado", "preco": 300.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 550.00,
-                "servicosAdicionais": [
-                    { "id": 2, "nome": "Camiseta do Show", "preco": 110.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 1200.00,
+                "meia": 600.00,
+                "servicosAdicionais": [ { "id": 2, "nome": "Acesso Antecipado", "preco": 200.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 275.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Camiseta do Show", "preco": 110.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 950.00,
+                "meia": 475.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Camiseta do Show", "preco": 110.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 600.00,
+                "meia": 300.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Pôster", "preco": 70.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Estacionamento", "preco": 60.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 550.00,
+                "meia": 275.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Programa do Evento", "preco": 40.00 } ]
             }
         ]
     },
@@ -155,28 +222,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 1200.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Open Bar", "preco": 250.00 },
-                    { "id": 2, "nome": "Camiseta Oficial", "preco": 100.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 950.00,
+                "meia": 475.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Open Bar", "preco": 250.00 }, { "id": 2, "nome": "Acesso Antecipado", "preco": 150.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 600.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Estacionamento", "preco": 70.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 900.00,
+                "meia": 450.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Open Bar", "preco": 250.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 300.00,
-                "servicosAdicionais": [
-                    { "id": 4, "nome": "Estacionamento", "preco": 70.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 780.00,
+                "meia": 390.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Camiseta Oficial", "preco": 100.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 580.00,
+                "meia": 290.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Pôster", "preco": 65.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 650.00,
+                "meia": 325.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 70.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 480.00,
+                "meia": 240.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Programa do Evento", "preco": 35.00 } ]
             }
         ]
     },
@@ -191,28 +275,45 @@
         "setores": [
             {
                 "id": 1,
-                "nome": "VIP",
-                "preco": 800.00,
-                "servicosAdicionais": [
-                    { "id": 1, "nome": "Foto com a banda (simulada)", "preco": 150.00 },
-                    { "id": 2, "nome": "Kit Exclusivo", "preco": 200.00 }
-                ]
+                "nome": "LPU PIT 1",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Foto com a banda (simulada)", "preco": 150.00 }, { "id": 2, "nome": "Kit Exclusivo", "preco": 200.00 } ]
             },
             {
                 "id": 2,
-                "nome": "Inteira",
-                "preco": 450.00,
-                "servicosAdicionais": [
-                    { "id": 3, "nome": "Pôster Exclusivo", "preco": 75.00 }
-                ]
+                "nome": "LPU PIT 2",
+                "inteira": 700.00,
+                "meia": 350.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Kit Exclusivo", "preco": 200.00 } ]
             },
             {
                 "id": 3,
-                "nome": "Meia",
-                "preco": 225.00,
-                "servicosAdicionais": [
-                    { "id": 4, "nome": "Pôster Exclusivo", "preco": 75.00 }
-                ]
+                "nome": "Pista Premium",
+                "inteira": 600.00,
+                "meia": 300.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Pôster Exclusivo", "preco": 75.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 420.00,
+                "meia": 210.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Copo Oficial", "preco": 45.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 500.00,
+                "meia": 250.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Guarda-Volumes", "preco": 30.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 350.00,
+                "meia": 175.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Programa do Evento", "preco": 30.00 } ]
             }
         ]
     }

@@ -1,14 +1,45 @@
-#pagamento{
-    margin-top: 50px;
-    text-align: center;
+#pagamento {
+    max-width: 600px;
+    margin: 40px auto; 
+    text-align: center; 
 }
 
-#pagamento img {       
-    margin-left: auto;     
-    margin-right: auto;   
+#pagamento form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px 10px;
+    align-items: center;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#pagamento button{
+#pagamento label {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+#pagamento input,
+#pagamento select {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#pagamento button {
+    margin-top: 20px; 
     margin-bottom: 50px;
+    padding: 12px 25px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.valorTotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px; 
+    font-weight: bold; 
 }

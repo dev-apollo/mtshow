@@ -1,27 +1,38 @@
-
-#setoresEvento, #sobre{
+#setoresEvento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin-top: 50px;
-    text-align: center;
 }
 
 .tabela-setores {
-  width: 100%;
-  max-width: 600px; 
-  margin: 20px auto; 
-  border-collapse: collapse; 
+    flex: 2; 
+    max-width: 600px; 
+    margin: 0; 
+    border-collapse: collapse;
+    width: 100%;
 }
 
+#setoresEvento img {
+    flex: 1; 
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px; 
+}
 .tabela-setores th, .tabela-setores td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
 }
-
 .tabela-setores th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
+}
+.linha-setor:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
-.linha-setor:hover {
-  background-color: #f5f5f5;
-  cursor: pointer;
+#sobre{
+  text-align: center;
 }
