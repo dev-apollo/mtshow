@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./revisao.css">
+    
     <title>MTShow - Pagamento</title>
 </head>
 <body>
-    <main>
+    <header>
         <h1>MTShow - Revisão</h1>
-        <div id="revisao">
+    </header>
+    <main class="revisao-ctn">
+        <div id="detalhesPedido">
+            <h3>Pedido concluído!</h3>
+            <p>Você pode visualizar as informações do seu pedido abaixo: </p>
+            <hr>
             <h2 id="nomeRevisao"></h2>
-            <p id="data-horarioRevisao"></p>
+            <p id="dataRevisao"></p>
+            <p id="horarioRevisao"></p>
             <p id="localRevisao"></p>
             <p id="setorRevisao"></p>
             <div id="servicosRevisao">
-                <p>Serviços adicionados:</p>
+                <p><strong>Serviços</strong></p>
+            </div>
+            <hr>
+            <div class="valorTotal">
+                <span>Valor Total:</span>
+                <span id="valorFinal"></span>
             </div>
             <button id="retornar">Voltar para início</button>
+        </div>
+        <div class="imagem-evento">
+            <img id="imagemPromo" src="">
         </div>
     </main>
     <footer>

@@ -1,0 +1,320 @@
+[
+    {
+        "id": 1,
+        "nomeEvento": "AfterShock",
+        "imagemPromo": "src/imgs/Aftershock.webp",
+        "descricao": "Considerado um dos maiores festivais de rock e metal da Costa Oeste dos EUA, o Aftershock reúne lendas e novos ícones em Sacramento. Seus palcos vibram com a energia do hard rock, nu metal e metalcore, atraindo uma multidão apaixonada por peso e guitarras altas.",
+        "data": "15/01/2025",
+        "horario": "20:30",
+        "local": "Discovery Park - Sacramento, EUA",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 850.00,
+                "meia": 425.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Acesso Antecipado", "preco": 150.00 }, { "id": 2, "nome": "Open Bar", "preco": 200.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 800.00,
+                "meia": 400.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Acesso Antecipado", "preco": 150.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 650.00,
+                "meia": 325.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Camiseta Oficial", "preco": 80.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 450.00,
+                "meia": 225.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Copo do Evento", "preco": 45.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 500.00,
+                "meia": 250.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 50.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 350.00,
+                "meia": 175.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Pôster do Evento", "preco": 60.00 } ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nomeEvento": "BloodStock Open Air",
+        "imagemPromo": "src/imgs/bloodstock.jpg",
+        "descricao": "O coração do metal britânico bate mais forte no Bloodstock Open Air, um festival independente feito por e para metalheads. Com uma curadoria que abraça do heavy metal clássico ao death e black metal, o evento é uma celebração da cultura e da comunidade do som pesado.",
+        "data": "10/02/2025",
+        "horario": "21:00",
+        "local": "Catton Park - Derbyshire, Reino Unido",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 1200.00,
+                "meia": 600.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Acesso ao Lounge VIP", "preco": 300.00 }, { "id": 2, "nome": "Camiseta Oficial", "preco": 90.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 1100.00,
+                "meia": 550.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Acesso ao Lounge VIP", "preco": 300.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 900.00,
+                "meia": 450.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Estacionamento VIP", "preco": 120.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 700.00,
+                "meia": 350.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Foto Oficial", "preco": 70.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Programa do Evento", "preco": 40.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 550.00,
+                "meia": 275.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Guarda-Volumes", "preco": 30.00 } ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nomeEvento": "Sweeden Rock",
+        "imagemPromo": "src/imgs/swedenrock.jpg",
+        "descricao": "Um dos festivais mais aclamados da Escandinávia, o Sweden Rock é uma verdadeira enciclopédia do rock e do metal. Seus line-ups misturam lendas do classic rock e hard rock com gigantes do metal extremo, criando uma atmosfera única e amigável para todas as gerações de fãs.",
+        "data": "22/03/2025",
+        "horario": "19:30",
+        "local": "Sölvesborg, Suécia",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Open Bar", "preco": 150.00 }, { "id": 2, "nome": "Acesso Antecipado", "preco": 120.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 700.00,
+                "meia": 350.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Open Bar", "preco": 150.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 600.00,
+                "meia": 300.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Foto Oficial", "preco": 60.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 400.00,
+                "meia": 200.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Camiseta Oficial", "preco": 70.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 480.00,
+                "meia": 240.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento Comum", "preco": 50.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 320.00,
+                "meia": 160.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Programa do Evento", "preco": 30.00 } ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nomeEvento": "KnotFest",
+        "imagemPromo": "src/imgs/knotfest.webp",
+        "descricao": "Criado pela mente do Slipknot, o Knotfest é mais que um festival: é uma experiência imersiva e multissensorial. O evento é um caldeirão de caos e peso, celebrando o que há de mais intenso e visceral no metal moderno, do nu-metal ao metalcore.",
+        "data": "18/04/2025",
+        "horario": "22:15",
+        "local": "Sambódromo do Anhembi - São Paulo, Brasil",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 1000.00,
+                "meia": 500.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Lounge Privativo", "preco": 400.00 }, { "id": 2, "nome": "Máscara Exclusiva", "preco": 150.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 950.00,
+                "meia": 475.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Lounge Privativo", "preco": 400.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Open Bar", "preco": 200.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 550.00,
+                "meia": 275.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Camiseta Oficial", "preco": 90.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 600.00,
+                "meia": 300.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 60.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 450.00,
+                "meia": 225.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Pôster", "preco": 50.00 } ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nomeEvento": "Sick New World",
+        "imagemPromo": "src/imgs/sicknewworld.jpg",
+        "descricao": "Uma explosão de nostalgia para os fãs de nu-metal e rock alternativo, o Sick New World revive a energia do final dos anos 90 e início dos 2000. Realizado em Las Vegas, o festival reúne bandas icônicas que definiram uma geração com riffs pesados, grooves e angústia.",
+        "data": "09/05/2025",
+        "horario": "20:00",
+        "local": "Las Vegas Festival Grounds - Las Vegas, EUA",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 800.00,
+                "meia": 400.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Open Bar Premium", "preco": 200.00 }, { "id": 2, "nome": "Acesso ao Lounge", "preco": 150.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 750.00,
+                "meia": 375.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Open Bar Premium", "preco": 200.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 620.00,
+                "meia": 310.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Voucher de Alimentação", "preco": 50.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 420.00,
+                "meia": 210.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Camiseta", "preco": 70.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 500.00,
+                "meia": 250.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Estacionamento", "preco": 50.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 340.00,
+                "meia": 170.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Pôster", "preco": 40.00 } ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nomeEvento": "Power Trip Festival",
+        "imagemPromo": "src/imgs/powertrip.jpg",
+        "descricao": "Um evento lendário que reuniu os maiores titãs do heavy metal e hard rock em um único fim de semana histórico. O Power Trip foi concebido como um encontro monumental de gerações, celebrando o poder e o legado de bandas que moldaram a história da música pesada.",
+        "data": "27/06/2025",
+        "horario": "23:45",
+        "local": "Empire Polo Club - Indio, EUA",
+        "setores": [
+            {
+                "id": 1,
+                "nome": "LPU PIT 1",
+                "inteira": 1500.00,
+                "meia": 750.00,
+                "servicosAdicionais": [ { "id": 1, "nome": "Acesso ao Golden Circle", "preco": 500.00 }, { "id": 2, "nome": "Open Bar Premium", "preco": 300.00 } ]
+            },
+            {
+                "id": 2,
+                "nome": "LPU PIT 2",
+                "inteira": 1400.00,
+                "meia": 700.00,
+                "servicosAdicionais": [ { "id": 3, "nome": "Acesso ao Golden Circle", "preco": 500.00 } ]
+            },
+            {
+                "id": 3,
+                "nome": "Pista Premium",
+                "inteira": 1100.00,
+                "meia": 550.00,
+                "servicosAdicionais": [ { "id": 4, "nome": "Camiseta Oficial", "preco": 120.00 } ]
+            },
+            {
+                "id": 4,
+                "nome": "Pista Comum",
+                "inteira": 800.00,
+                "meia": 400.00,
+                "servicosAdicionais": [ { "id": 5, "nome": "Estacionamento", "preco": 80.00 } ]
+            },
+            {
+                "id": 5,
+                "nome": "Cadeira Inferior",
+                "inteira": 900.00,
+                "meia": 450.00,
+                "servicosAdicionais": [ { "id": 6, "nome": "Programa do Evento", "preco": 60.00 } ]
+            },
+            {
+                "id": 6,
+                "nome": "Cadeira Superior",
+                "inteira": 650.00,
+                "meia": 325.00,
+                "servicosAdicionais": [ { "id": 7, "nome": "Pôster do Evento", "preco": 75.00 } ]
+            }
+        ]
+    }
+]

@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./evento.css">
+    <link rel="stylesheet" href="./header_footer.css">
     <title>MTShow - </title>
 </head>
 <body>
     <main>
-        <h1>MTShow</h1>
+        <header>
+            <h1>MTShow</h1>
+        </header>
         <div id="evento">
             <div id="infosEvento">
-                <img src="" id="imagemPromo">
                 <h2 id="nomeEvento"></h2>
                 <p id="data-horario"></p>
                 <p id="local"></p>
-                <p id="descricao"></p>
-                <div id="artistas"></div>
             </div>
-            <div id="setoresEvento">
-                <h3>Escolha o seu lugar:</h3>
-                <div id="setores"></div>
+            <div>
+                <img src="" id="imagemPromo">
             </div>
+        </div>
+        <div id ="sobre">
+            <h2>Sobre o evento</h2>
+            <p id="descricao"></p>
+            <div id="artistas"></div>
+        </div>
+        <div id="setoresEvento">
+            <table class="tabela-setores">
+                <thead>
+                    <tr>
+                        <th>Setor</th>
+                        <th>Inteira</th>
+                        <th>Meia entrada</th>
+                        <!-- Tive uma ideia de colocar um seletor de qtd na tabela msm, dai um botao que le a tabela e envia pra prox pag-->
+                        <th>Quantidade de ingressos</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                </tbody>
+            </table>
+            <img src="./src/imgs/mapa_palco.png">
         </div>
     </main>
     <footer>

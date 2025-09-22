@@ -1,14 +1,17 @@
-import eventos from "../json/eventos.json" with { type: "json" };
+import festivais from "../json/festivais.json" with { type: "json" };
+import solos from "../json/solos.json" with { type: "json" };
+import { montarEvento } from './utils.js'
+
 const searchParams = new URLSearchParams(window.location.search);
 
-function confirmarServicos(infosEvento, infosSetor){
+function confirmarServicos(infosEvento, infosSetor,tipoEvento){
     const servicos = document.querySelectorAll("input[type='checkbox']")
     const idServicos = [] 
     servicos.forEach(checkbox => {
         if(checkbox.checked) idServicos.push(checkbox.value)
     })
     const idServicosStr = idServicos.join(",")
-    window.location = `pagamento.html?idEvento=${infosEvento.id}&idSetor=${infosSetor.id}&idServicos=${idServicosStr}`;
+    window.location = `pagamento.html?idEvento=${infosEvento.id}&idSetor=${infosSetor.id}&idServicos=${idServicosStr}&tipo=${tipoEvento}`;
 }
 
 function criarServicoAdicional(infosServicos){
@@ -29,7 +32,7 @@ function criarServicoAdicional(infosServicos){
     return divServico
 }
 
-function montarServicosAdicionais(infosSetor, infosEvento){
+function montarServicosAdicionais(infosSetor, infosEvento, tipoEvento){
     let setor = document.getElementById("setor");
     setor.innerHTML = `${infosSetor.nome} - ${infosEvento.nomeEvento}`
 
@@ -46,14 +49,24 @@ function montarServicosAdicionais(infosSetor, infosEvento){
     buttonConfirmarServicos.textContent = "Confirmar serviços";
     buttonConfirmarServicos.addEventListener("click", (e) => {
         e.preventDefault()
-        confirmarServicos(infosEvento, infosSetor)
+        confirmarServicos(infosEvento, infosSetor,tipoEvento)
     })
 
     formServicosAdicionais.appendChild(buttonConfirmarServicos)
 }
 
+
+
 (() => {
-    const infosEvento = eventos[searchParams.get("idEvento")-1];
+    const searchParams = new URLSearchParams(window.location.search);
+    const eventoTipo = searchParams.get("tipo");
+    let infosEvento;
+    if(eventoTipo === "festival"){
+        infosEvento = festivais[searchParams.get("idEvento")-1];
+    }else{
+        infosEvento = solos[searchParams.get("idEvento")-1];
+    }
     const infosSetor = infosEvento.setores[searchParams.get("idSetor")-1];
-    montarServicosAdicionais(infosSetor, infosEvento);
+    montarEvento(infosEvento);
+    montarServicosAdicionais(infosSetor, infosEvento,eventoTipo);
 })();
